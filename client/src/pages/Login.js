@@ -9,34 +9,7 @@ function App() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // async function loginUser(event) {
-  //   event.preventDefault()
-  //   console.log(email)
-  //   const response = await fetch('http://localhost:1337/api/login', {
-
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": 'application/json'
-  //     },
-  //     body: JSON.stringify({
-
-  //       email,
-  //       password,
-  //     }),
-  //   })
-
-  //   const data = await response.json()
-
-  //   if(data.user) {
-  //     alert("Login Successfull")
-  //     // window.location.href="/dashboard"
-  //   }
-  //   else {
-  //     alert("please check username and password")
-  //   }
-  //   console.log(data)
-  // }
-
+  
   async function loginUser(event) {
     event.preventDefault();
 
@@ -53,17 +26,7 @@ function App() {
         }
       })
       .catch(err => console.log(err));
-    // console.log(response);
-    // const data = await response.json()
 
-    // if(data.user) {
-    //   alert("Login Successfull")
-    //   // window.location.href="/dashboard"
-    // }
-    // else {
-    //   alert("please check username and password")
-    // }
-  }
 
 
   return (
